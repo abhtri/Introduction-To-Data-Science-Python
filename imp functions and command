@@ -24,5 +24,8 @@
   data1.isnull().sum()
    # convert data for numerical analysis
    pd.get_dummies(data1[data1_x])
-  
+   
+   
+   # Split data ---
+train1_x, test1_x, train1_y, test1_y = model_selection.train_test_split(data1[data1_x_calc], data1[Target], random_state = 0)  
   
