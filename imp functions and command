@@ -1,0 +1,24 @@
+ ### https://www.kaggle.com/kanncaa1/feature-selection-and-data-visualization ### 
+  
+  df.describe() # tells the variance, standart deviation, number of sample (count) or max min values of the data frame
+  B, M = y.value_counts() // y is numpy variable 
+ 
+ # standardization of data 
+    
+  (df- df.mean())/df.std()
+  
+  # iloc function 
+  
+  df.iloc[:,0:10] // fetched first 10 rows 
+  
+  pd.concat(x,y,axis=1) # add to frames to a single frame 
+  
+  # pandas drop data frame
+  x.drop(drop_list1,axis = 1 ) 
+  
+  # normalize the data 
+  #normalization
+  x_train_N = (x_train-x_train.mean())/(x_train.max()-x_train.min())
+  x_test_N = (x_test-x_test.mean())/(x_test.max()-x_test.min())
+  
+  
