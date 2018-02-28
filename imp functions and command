@@ -1,5 +1,5 @@
  ### https://www.kaggle.com/kanncaa1/feature-selection-and-data-visualization ### 
-  
+  data_raw.info() # info of the data set 
   df.describe() # tells the variance, standart deviation, number of sample (count) or max min values of the data frame
   B, M = y.value_counts() // y is numpy variable 
  
@@ -20,5 +20,9 @@
   #normalization
   x_train_N = (x_train-x_train.mean())/(x_train.max()-x_train.min())
   x_test_N = (x_test-x_test.mean())/(x_test.max()-x_test.min())
+  
+  data1.isnull().sum()
+   # convert data for numerical analysis
+   pd.get_dummies(data1[data1_x])
   
   
