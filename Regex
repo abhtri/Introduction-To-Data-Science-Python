@@ -1,0 +1,26 @@
+Reqex expression and uses : 
+
+[A-Za-z0-9]+ == One or more times of something in between square brackets
+. : matches a single character
+^ : start of a String 
+$ : end of the String 
+[]: match one of character within the square brackets
+[a-z]: matches anything within a-z
+[^] : not within the Square brackets.
+A|B : Match either or OR
+() scoping operators
+\ : escape characters
+\b : word boundary
+\d: any single digit
+\D : any non digit [^0-9]
+\s : any new line chart like \t\n\r\f\v
+\S: any thing not in \t\n\r\f\v
+\w: Alphanumeric Character any number and letter and _
+\W : any none alphanumeric character
+*: matches 0 or more occurences
++ : atleast should happen once can happen more too
+? : match only once or 0 times 
+{n}: matches n repetitions  n>= 0
+{n,} : atleast n times 
+{,n} atmost n times 
+{m,n} atleast m times and atmost n times
