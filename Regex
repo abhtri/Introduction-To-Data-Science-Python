@@ -24,3 +24,12 @@ A|B : Match either or OR
 {n,} : atleast n times 
 {,n} atmost n times 
 {m,n} atleast m times and atmost n times
+
+Matching Dates using Regex: 
+re.findall(r’\d{2}[/-]\d{2}[/-]\d{4}’,dateStr)
+re,findall(r’\d{2}[/-]\d{2}[/-]\d{2,4}’)
+re,findall(r’\d{1,2}[/-]\d{1,2}[/-]\d{2,4}’)  : 1or 2 for date 1or 2 for month 2 and 4 for year
+re.findall(r’\d{1,2}[/-]\(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[/-]\d{2,4}’)  : pulls out only 23 Oct 2002 but not 232 October 2003
+re.findall(r’\d{1,2}[/-]\(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[/-]\d{2,4}’)[a-z]* )[/-]\d{2,4}’)  
+  : pulls out only 23 Oct 2002 and also 22 October 2003
+
